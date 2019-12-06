@@ -1,0 +1,35 @@
+<a
+onclick="openModal('{{ post.title | replace: ' ', '-'  }}')" class="trigger publications-item-wrapper"
+href="#pub-modal-{{ post.title | replace: ' ', '-'  }}">
+
+  <div class="publications-item">
+  <div class="publications-image" style="background-image: url('{{ site.baseurl }}/assets/img/publications/{{ post.thumbnail }}');">
+  </div>
+  <h4 class="publications-title">{{ post.title }}</h4>
+
+  </div>
+
+</a>
+
+<div id="pub-modal-{{ post.title | replace: ' ', '-'  }}" class="modal-window">
+  <a onclick="closeModal('{{ post.title | replace: ' ', '-'  }}')">
+    <div class="modal-content">
+      <ul class="modal-header"><li>
+      <h1 class="modal-title">Abstract</h1></li><li>
+      <p class="modal-close">&times;<span class="display-desktop-only"> close</span></p></li></ul>
+
+      <div>
+      <strong>{{ post.author }}</strong>
+      <p>{{ post.abstract }}</p>
+      </div>
+
+      <ul class="publications-details">
+      <li>Publisher:<strong>{{ post.publisher }}</strong></li>
+      <li>Date:<strong>{{ post.project-date }}</strong></li>
+      <li>Category:<strong>{{ post.category }}</strong></li>
+      <li>doi:<strong><a href="{{ post.doi-url }}">{{ post.doi }}</a></strong></li>
+      </ul>
+
+    </div>
+  </a>
+</div>

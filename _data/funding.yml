@@ -1,0 +1,12 @@
+- name: Compete 2020
+  url:
+  logo: compete.png
+- name:
+  url:
+  logo: fct.png
+- name: Fundação para a Ciência e a Tecnologia
+  url: https://www.fct.pt/
+  logo: portugal2020.svg
+- name:
+  url:
+  logo: ue-feder_cor.jpg

@@ -1,0 +1,67 @@
+footer
+  display: grid
+  grid-template-columns: 2fr 1fr 1fr
+  grid-template-rows: auto 5vh
+  grid-template-areas: "fbragging  fbragging flinks" "fbase fbase fbase"
+  grid-gap: 4rem
+  box-sizing: border-box
+  padding-left: 4rem
+  padding-right: 4rem
+  padding-top: 5rem
+  background-color: $footer-bg
+  color: $white-color
+
+.footer-bragging
+  grid-area: fbragging
+  ul
+    display: flex
+    justify-content: space-between
+    padding: 0
+    padding-top: 2rem
+    position: relative
+  li
+    list-style: none
+
+.footer-links
+  grid-area: flinks
+  text-align: right
+  text-decoration: none
+  li
+    list-style: none
+    // transition for hover
+    transition: 0.3s ease-in-out
+
+.footer-base
+  grid-area: fbase
+  display: flex
+  font-size: $small-font
+  border-top: 1px solid rgb(130, 130, 130)
+  justify-content: space-between
+
+@media screen and ( min-width : 1024px )
+  // assume touch so dont bother looding these
+  .footer-links:hover > li
+    opacity: 0.5
+
+  .footer-links:hover > li:hover
+    opacity: 1
+
+@media screen and ( max-width : 600px )
+  footer
+    grid-template-columns: 1fr
+    grid-template-rows: auto auto auto
+    grid-template-areas: "flinks" "fbragging" "fbase"
+    grid-gap: 10vh
+    box-sizing: border-box
+    padding-left: 2rem
+    padding-right: 2rem
+    padding-top: 4rem
+  .footer-links
+    text-align: left
+
+  .footer-bragging
+    margin: auto
+    ul
+      flex-direction: column
+      li
+        padding: 20px

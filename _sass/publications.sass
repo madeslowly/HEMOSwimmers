@@ -1,0 +1,82 @@
+.publications-wraper
+  margin: 0
+  background-color: $pure-white-color
+
+.publications-header
+  border-bottom: solid 1px black
+
+.publications-header-img
+  width: 100%
+  display: block
+  margin: auto 0
+
+.publications-panel
+  display: flex
+  flex-wrap: wrap
+  flex-direction: column
+  width: 100%
+  margin: 10vh auto
+
+.publications-item-wrapper
+  flex-basis: 100%
+  flex-shrink: 0
+
+.publications-item
+  background-color: $white-color
+  margin: 5vh 2vw
+  border: solid 1px $soft-black-color
+  border-radius: 20px
+  overflow: hidden
+
+.publications-image
+  height: 40vh
+  background-size: cover
+  background-position: center
+  transition: all 2s cubic-bezier(.2,.3,0,1)
+
+.publications-title
+  padding: 0 10px
+  transition: all 2s cubic-bezier(.2,.3,0,1)
+
+.publications-footer-link
+
+  text-align: center
+  font-weight: $heavy-font
+  text-transform: uppercase
+  i
+    transition: 0.3s ease-in-out
+
+@media screen and ( min-width : 768px )
+
+  .publications-panel
+    flex-direction: row
+    margin-bottom: 0
+
+  .publications-item-wrapper
+    flex-basis: auto
+    width: 33.3%
+
+  .publications-item
+    min-height: 40vh
+
+  .publications-image
+    height: 20vh
+
+  .publications-item:hover
+    .publications-title
+      transform: translateY(-5px)
+    .publications-image
+      transform: scale(1.1)
+
+  .publications-footer-link:hover
+    i
+      color: $vivid-red-color
+
+@media screen and ( min-width : 1280px )
+
+  .publications-header-img
+    max-width: 786px
+    margin: 0 auto
+
+  .publications-panel
+    max-width: 900px

@@ -1,0 +1,12 @@
+- name: Fabrication
+  bg-img: fabrication
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+  icon: /assets/img/content/icons/research-1.svg
+- name: Microscopy
+  bg-img: microscopy
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+  icon: /assets/img/content/icons/research-3.svg
+- name: Analysis
+  bg-img: analysis
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
+  icon: /assets/img/content/icons/research-4.svg

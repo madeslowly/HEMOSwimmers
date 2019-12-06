@@ -1,0 +1,104 @@
+html
+  scroll-behavior: smooth
+  font-size: $global-font-size
+
+body
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  overflow-x: hidden
+  font-family: $primary-font-family
+  font-weight: $light-font
+  letter-spacing: $global-letter-spacing
+
+a
+  text-decoration: none
+  color: inherit
+
+a:hover
+  text-decoration: none
+
+// defining z here just makes sure no funny bussiness happens with other layers showing up on top
+nav, footer
+  z-index: 1
+
+p,h1,h2,h3,h4,h5,h6
+  padding: 0
+  //margin: 0
+
+button, .btn
+  // some 'buttons' are actually hyperlinks styled to look like buttons, for the purpose of readers. So we always class as .btn btn-*
+  font-size: 1rem
+  font-weight: $heavy-font
+  letter-spacing: 1px
+  text-align: center
+  text-decoration: none
+  border-radius: 5px
+  display: block
+  width: min-content
+  padding: 1rem 1.6rem
+  white-space: nowrap
+  transition: 0.3s ease-in-out
+
+button
+  cursor: pointer
+
+.btn-solid
+  border: 0
+
+.btn-outline
+  background-color: transparent
+  border: solid 1px
+
+.btn-yellow
+  background-color: $yellow-color
+  color: $blue-color
+
+.btn-pink
+  background-color: $vivid-red-color
+  color: $white-color
+
+.btn-white
+  background-color: $pure-white-color
+  color: $soft-black-color
+
+.global-container
+  padding: $container-margin-768
+  margin: 0
+
+.spacer
+  min-height: 5vh
+  background-color: inherit
+
+.center-header, .center-strap
+  text-align: center
+
+.center-header
+  padding: 0
+  margin: 0
+  text-transform: uppercase
+
+.display-desktop-only
+  display: none
+// dont hover on phones
+@media screen and ( min-width : 768px )
+
+  .display-desktop-only
+    display: inherit
+
+  .btn-pop:hover
+    @include btn-animation
+    box-shadow: $box-shadow-hover
+    //color: inherit
+    // Id like to automatically add the shadow color depending on the button color
+
+  .btn-color-swoosh:hover
+    @include btn-animation
+    box-shadow: $box-shadow-hover
+
+@media screen and ( min-width : 1024px)
+  .global-container
+    padding: $container-margin-1024
+
+  .spacer
+    min-height: 10vh

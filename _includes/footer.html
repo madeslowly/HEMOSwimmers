@@ -1,0 +1,39 @@
+<footer>
+  <!-- footer contacts -->
+  <div class="footer-bragging">
+    <ul>
+      {% for item in site.data.funding %}
+        <li>
+          <a href="{{ item.url }}">
+            <img src="{{ site.baseurl }}/assets/img/funding/logos/{{ item.logo }}" width="120px">
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="footer-socials"></div>
+
+  <div class="footer-links"
+    <ul>
+      {% for item in site.data.menu %}
+        <li>
+          <a href="{{ item.link }}" >
+            {{ item.name }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <!-- footer base -->
+  <div class="footer-base">
+    <p class="footer-slogan">
+      <a href="{{ site.author.url }}">
+        {{ site.author.name }}
+      </a>
+    </p>
+    <p class="copyright"> &copy; {{ 'now' | date: "%Y" }} {{ site.owner }}</p>
+  </div>
+
+</footer>

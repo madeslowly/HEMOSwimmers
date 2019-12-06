@@ -1,0 +1,39 @@
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/mobile-nav-slider.js"></script>
+
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/nav.js"></script>
+
+<script type="text/javascript" src="{{ site.baseurl }}/assets/js/pub-modal.js"></script>
+
+<script type="text/javascript" src="{{ site.baseurl }}/assets/aos/aos.js"></script>
+
+<script>
+  AOS.init({
+    duration: 1000,
+    easing: 'ease-in-out',
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+
+<script>
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "rgba(40, 40, 40, 0.8)",
+      "text": "#ffffff"
+    },
+    "button": {
+      "background": "rgba(144, 0, 0, 0.9)"
+    }
+  },
+  "theme": "edgeless",
+  "position": "bottom-left",
+  "content": {
+    "message": "This website is cooking up cookies. Whoa there",
+    "dismiss": "I eat cookies for breakfast!",
+    "link": "tell me more!",
+    "href": "/privacy##cookies",
+    "target": "_self"
+  }
+});
+</script>

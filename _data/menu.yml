@@ -1,0 +1,20 @@
+# Main menu
+- name:      Research
+  link:      /#research
+  menu:      1
+- name:      Publications
+  link:      /#publications
+  menu:      1
+- name:      Team
+  link:      /#team
+  menu:      1
+- name:      Open Position
+  link:      /open-position
+  menu:      1
+- name:      Contact
+  link:      /contact
+  menu:      1
+# Secondary level menu items
+- name:      Privacy
+  link:      /privacy
+  menu:      2

@@ -1,0 +1,68 @@
+
+# Team names, icons and social links
+- name: Laura Campo Deaño
+  pic: deano
+  position: Principal Investigator
+  social:
+    - icon: fab fa-twitter
+      url: #
+    - icon: fas fa-link
+      url: #
+    - icon: far fa-envelope
+      url: mailto:campo@fe.up.pt
+
+- name: Manuel A. M. Alves
+  pic: alves
+  position: Co-Principal Investigator
+  social:
+    - icon: fab fa-twitter
+      url: #
+    - icon: fas fa-link
+      url: #
+    - icon: envelope
+      url: #
+
+- name: Hélder Oliveira
+  pic: oliveira
+  position: Senior Researcher
+  social:
+    - icon: fab fa-twitter
+      url: #
+    - icon: fas fa-link
+      url: #
+
+- name: Ricardo Araújo
+  pic: araujo
+  position: PhD student
+  social:
+    - icon: fab fa-twitter
+      url: #
+    - icon: fas fa-link
+      url: #
+
+- name: Tomás Rodrigues Pinto
+  pic: pinto
+  position: PhD Student
+  social:
+    - icon: fab fa-twitter
+      url: #
+    - icon: fas fa-link
+      url: #
+
+- name: Erica Doutel
+  pic: doutel
+  position: Post-Doc
+  social:
+    - icon: fab fa-twitter
+      url: #
+    - icon: fas fa-link
+      url: #
+
+- name: Marina Castro
+  pic: default
+  position: Researcher
+  social:
+    - icon: fab fa-twitter
+      url: #
+    - icon: fas fa-link
+      url: #

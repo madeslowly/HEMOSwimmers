@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<!-- wrapping in section tag triggers safari reader icon -->
+<section>
+
+  {{ content }}
+
+  <section class="spacer publications-wraper"></section>
+  <a name="publications"></a>
+  {% include publications.html %}
+  <section class="spacer publications-wraper"></section>
+</section>

@@ -1,0 +1,16 @@
+<!-- publications  -->
+<section class="global-container publications-wraper">
+  <h1 class="center-header"
+  style="border-bottom: solid 1px black">Publications</h1>
+
+  <img class="publications-header-img" src="{{ site.baseurl }}/assets/img/publications/publications-header.jpg" class="publications-image" alt="">
+
+  <div class="publications-panel">
+    {% for post in site.posts %}
+
+    {% include publication-item.html %}
+
+    {% endfor %}
+
+  </div>
+</section>

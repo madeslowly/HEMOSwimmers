@@ -1,0 +1,79 @@
+# Site settings
+title: HEMOSwimmers
+subtitle: Hemodynamic optimization around 3D swimming microbots
+description: Research project at the University of Porto looking to analyze and understand the complex flow dynamics around 3D microbot's prototypes, along characteristic geometries of the human circulatory system.
+
+# if page home
+#   title = site.title | subtitle
+#   description = site.description
+# else
+#   title = title | site.title
+#   description = page.description
+
+url: "https://web.fe.up.pt"
+baseurl: #"/~campo/HEMOSwimmers"
+
+lang: en_GB
+
+keywords: Laura Campo Deaño, University of Porto, microbots, Made Slowly
+
+owner: Laura Campo Deaño
+email: campo@fe.up.pt
+phone: +351 22 508 13 65
+
+# Postal address (add as many lines as necessary)
+postal_add:
+  street: Faculdade de Engenharia da Universidade do Porto
+  city: Porto
+  region:
+  country: Portugal
+  postcode: "4200-465"
+
+author:
+  name: Made Slowly
+  email: arran@madeslowly.co.uk
+  twitter: made_slowly
+  description: Freelance web developer, based in Oxford, providing an all-in-one solution to getting a website. Your new website will be smarter and faster all whilst looking awesome | Web Design | Digital Branding | Secure Hosting
+  url: https://www.madeslowly.co.uk
+
+logo: hs-logo.svg
+
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - icon: fab fa-twitter
+    url:
+  - icon: fab fa-facebook
+    url:
+  - icon: fab fa-github
+    url:
+
+# Build settings
+
+exclude:
+  - notes.md
+  - Gemfile
+
+markdown:          kramdown
+paginate:          6
+paginate_path:     "/publications/page-:num/"
+permalink: /publications/:title/
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-autoprefixer
+  - jekyll-sitemap
+  - jekyll-target-blank
+
+sass:
+ style: compressed
+
+compress_html:
+  ignore:
+    envs: development
+  comments: all
+
+autoprefixer:
+  only_production: true
+  browsers:
+  - cover 99.5%
