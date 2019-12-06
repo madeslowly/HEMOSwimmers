@@ -1,2 +1,4 @@
 # HEMOSwimmers
-Jekyll build for client
+A Jekyll build for Laura Deano
+
+(Screenshot)[schreenshoy.png]
