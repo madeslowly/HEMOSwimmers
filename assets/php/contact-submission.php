@@ -1,3 +1,5 @@
+---
+---
 <?php
   /*
   we will validate fields before getting here, but we need to have an escape in the event of some server error failling to send the messsage
@@ -38,6 +40,6 @@
 
   $host  = $_SERVER['HTTP_HOST'];
 
-  header("Location: /contact-confirm.html"); /* Redirect browser */
+  header("Location: {{ site.baseurl}}/contact-confirm.html"); /* Redirect browser */
   exit();
 ?>

@@ -4,7 +4,7 @@
   <div class="team-panel">
     {% for item in site.data.team %}
     <div class="team-member" data-aos="fade-in">
-      <img src="assets/img/team/{{ item.pic }}.jpg" class="" alt="">
+      <img src="{{ site.baseurl }}/assets/img/team/{{ item.pic }}.jpg" class="" alt="">
       <h3 class="team-name">{{ item.name }}</h3>
       <p class="team-position">{{ item.position }}</p>
       <ul class="team-contacts">

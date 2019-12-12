@@ -1,5 +1,5 @@
 .research-wraper
-  background-image: url(/assets/img/content/research/research-bg.svg)
+  background-image: url( $baseurl + '/assets/img/content/research/research-bg.svg')
   background-size: cover
   background-position: bottom
 
@@ -21,19 +21,20 @@
 .research-topic
   flex-basis: auto
   flex-shrink: 0
+  background-position: bottom
   padding: 0
   margin: 0
   overflow: hidden
-  transition: all 1s ease-in-out
 
 .research-topic-img
   background-repeat: no-repeat
   background-size: cover
   background-position: center
   height: 40vh
+  transition: all 1s ease-in-out
 
-.research:hover
-  transform: scale(1.2)
+.research-topic-img:hover
+  transform: scale(1.1)
 
 .research-title
   display: block
@@ -42,7 +43,7 @@
   text-align: center
   position: relative
   color: $pure-white-color
-  background-color: rgba(0,0,0,0.6)
+  background-color: rgb(121, 121, 121)
   border-right: solid white 1px
   z-index: 100
 
@@ -61,7 +62,7 @@
     width: 100%
 
   .research-topic-img
-    height: 30vh
+    //height: 30vh
 
 @media screen and ( min-width : 1024px )
 

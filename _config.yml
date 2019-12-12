@@ -11,7 +11,7 @@ description: Research project at the University of Porto looking to analyze and 
 #   description = page.description
 
 url: "https://web.fe.up.pt"
-baseurl: #"/~campo/HEMOSwimmers"
+baseurl: "/~campo/HEMOSwimmers"
 
 lang: en_GB
 
@@ -30,7 +30,7 @@ postal_add:
   postcode: "4200-465"
 
 author:
-  name: Made Slowly
+  name: made slowly
   email: arran@madeslowly.co.uk
   twitter: made_slowly
   description: Freelance web developer, based in Oxford, providing an all-in-one solution to getting a website. Your new website will be smarter and faster all whilst looking awesome | Web Design | Digital Branding | Secure Hosting
