@@ -2,14 +2,6 @@
 title: HEMOSwimmers
 subtitle: Hemodynamic optimization around 3D swimming microbots
 description: Research project at the University of Porto looking to analyze and understand the complex flow dynamics around 3D microbot's prototypes, along characteristic geometries of the human circulatory system.
-
-# if page home
-#   title = site.title | subtitle
-#   description = site.description
-# else
-#   title = title | site.title
-#   description = page.description
-
 url: "https://web.fe.up.pt"
 baseurl: "/~campo/HEMOSwimmers"
 
@@ -38,6 +30,9 @@ author:
 
 logo: hs-logo.svg
 
+google:
+  verification: 3-1KPjLLtQeo1sgSENGCLLkElCiVfRZAuc4-MJp9nEA
+  analytics: UA-154573664-1
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
@@ -53,6 +48,8 @@ social:
 exclude:
   - notes.md
   - Gemfile
+  - README.md
+  - Screenshot.png
 
 markdown:          kramdown
 paginate:          6
