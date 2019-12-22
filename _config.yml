@@ -66,6 +66,13 @@ plugins:
   - jekyll-sitemap
   - jekyll-target-blank
 
+defaults:
+  -
+    scope:
+      path: "error-pages/*"
+    values:
+      sitemap: false
+
 sass:
  style: compressed
 

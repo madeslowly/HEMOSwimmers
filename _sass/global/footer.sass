@@ -5,7 +5,7 @@ footer
   display: grid
   grid-column-gap: 0
   grid-row-gap: 10px
-  grid-template-areas: 'footer-funding' 'footer-links' 'footer-add' 'footer-base'
+  grid-template-areas: 'footer-funding' 'footer-links-wrapper' 'footer-add' 'footer-base'
   grid-template-columns: 1fr
   padding: 5vh 5vw
 
@@ -41,8 +41,8 @@ footer
   p
     margin: 0
 
-.footer-links
-  grid-area: footer-links
+.footer-links-wrapper
+  grid-area: footer-links-wrapper
   line-height: 2rem
   text-align: center
 
@@ -66,7 +66,7 @@ footer
 @media screen and ( min-width: 768px )
 
   footer
-    grid-template-areas: 'footer-links footer-funding' 'footer-add footer-funding' 'footer-base footer-base'
+    grid-template-areas: 'footer-links-wrapper footer-funding' 'footer-add footer-funding' 'footer-base footer-base'
     grid-template-columns: 60% 40%
     grid-row-gap: 0
 
@@ -85,13 +85,13 @@ footer
     flex-direction: row
     justify-content: space-between
 
-  .footer-links
+  .footer-links-wrapper
     text-align: left
 
 @media screen and ( min-width: 1024px )
 
   footer
-    grid-template-areas: 'footer-links footer-funding' 'footer-add footer-add' 'footer-base footer-base'
+    grid-template-areas: 'footer-links-wrapper footer-funding' 'footer-add footer-add' 'footer-base footer-base'
     grid-template-columns: 30% 70%
 
   .footer-funder-list
@@ -101,24 +101,18 @@ footer
     width: 15vw
 
   .footer-funders-img
-    filter: grayscale(1) invert(.5)
+    filter: grayscale(1) opacity(.4) contrast(500%)
     transition: filter .6s ease
     width: 100%
 
     &:hover
-      filter: grayscale(0) invert(0)
+      filter: grayscale(0) opacity(1) contrast(100%)
 
-
-
-  // broken
   .footer-links-list
     transition: .3s ease-in-out
 
-  .footer-links-list:hover > li
-    opacity: .5
-
-  .footer-link:hover
-    opacity: 1
+  .footer-link li:hover
+    opacity: .6
 
   .footer-add-list li
     display: inline-flex

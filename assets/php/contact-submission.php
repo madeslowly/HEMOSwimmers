@@ -6,7 +6,7 @@
   }
   */
   $to = "arran@madeslowly.co.uk";
-  $subject = "madeslowly.co.uk contact";
+  $subject = "{{ site.title }} contact";
   $name = $_REQUEST['name'] ;
   $email = $_REQUEST['email'] ;
   $message = $_REQUEST['message'] ;
@@ -25,12 +25,12 @@
 
   $message_body_response = "Hi ".$_POST["name"]."\n\n";
 
-  $message_body_response .= "This is an automated response to the message you sent whilst browsing madeslowly.co.uk.\n\n";
+  $message_body_response .= "This is an automated response to the message you sent whilst browsing {{ site.url }}{{ site.baseurl }}.\n\n";
 
-  $message_body_response .= "Thank you for your message, I'll get back to you as soon as I can.\n\n\n";
+  $message_body_response .= "Thank you for your message, we will get back to you as soon.\n\n\n";
 
-  $message_body_response .= "Arran Curran\n\n";
-  $message_body_response .= "made slowly | a slow developer\n\n\n";
+  $message_body_response .= "{{ site.owner }}\n\n";
+  $message_body_response .= "{{ site.title }}\n\n\n";
 
   $message_body_response .= "Your message:\n\n".$_POST["message"];
 
@@ -40,6 +40,6 @@
 
   $host  = $_SERVER['HTTP_HOST'];
 
-  header("Location: {{ site.baseurl}}/contact-confirm.html"); /* Redirect browser */
+  header("Location: {{ site.baseurl}}/contact-confirm/"); /* Redirect browser */
   exit();
 ?>
