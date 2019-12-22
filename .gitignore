@@ -2,6 +2,5 @@
 .jekyll-cache/
 .jekyll-metadata
 .DS_Store
-/assets/dev
 notes.md
 _site
