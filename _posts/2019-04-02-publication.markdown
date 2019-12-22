@@ -4,12 +4,11 @@ subtitle:
 author: Pinto, T. R., Galindo-Rosales, F.J. and  Campo-Deaño, L
 layout: default
 feature: true
-modal-id: 2
 date: 2019-04-02
 img: pub2.jpg
 thumbnail: pub2-thumb.jpg
 alt: image-alt
-project-date: April 2019
+publication-date: April 2019
 category: Publication
 publisher: Materials
 doi: 10.3390/ma12071086

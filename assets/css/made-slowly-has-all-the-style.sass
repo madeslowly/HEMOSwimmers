@@ -1,19 +1,23 @@
 ---
 ---
-$baseurl: "{{ site.baseurl }}"
+$baseurl: '{{ site.baseurl }}'
 
-@import "mixins/animations"
-@import "global/dimensions"
-@import "global/typography"
-@import "global/colors"
-@import "global/main"
-@import "global/nav"
-@import "global/footer"
-@import "landing"
-@import "research"
-@import "publications"
-@import "modal"
-@import "team"
-@import "contact"
-@import "privacy"
-@import "global/aos-overrides"
+@import global/colors
+
+@import mixins/animations
+@import global/dimensions
+@import global/typography
+
+@import global/nav
+@import global/footer
+@import landing
+@import research
+@import publications
+@import modal
+@import team
+@import contact
+@import privacy
+@import global/aos-overrides
+
+// place the main css last to override any local values
+@import global/main

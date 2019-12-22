@@ -1,68 +1,47 @@
-
 # Team names, icons and social links
 - name: Laura Campo Deaño
   pic: deano
   position: Principal Investigator
   social:
     - icon: fab fa-twitter
-      url: #
-    - icon: fas fa-link
-      url: #
+      url: https://twitter.com/lauracampodeano
     - icon: far fa-envelope
       url: mailto:campo@fe.up.pt
+    - icon: fas fa-link
+      url: http://www.campodeano.com/index.html
 
 - name: Manuel A. M. Alves
   pic: alves
   position: Co-Principal Investigator
   social:
-    - icon: fab fa-twitter
-      url: #
-    - icon: fas fa-link
-      url: #
-    - icon: envelope
-      url: #
+    - icon: far fa-envelope
+      url: mailto:mmalves@fe.up.pt
 
 - name: Hélder Oliveira
   pic: oliveira
   position: Senior Researcher
   social:
-    - icon: fab fa-twitter
-      url: #
-    - icon: fas fa-link
-      url: #
-
-- name: Ricardo Araújo
-  pic: araujo
-  position: PhD student
-  social:
-    - icon: fab fa-twitter
-      url: #
-    - icon: fas fa-link
-      url: #
-
-- name: Tomás Rodrigues Pinto
-  pic: pinto
-  position: PhD Student
-  social:
-    - icon: fab fa-twitter
-      url: #
-    - icon: fas fa-link
-      url: #
+    - icon: far fa-envelope
+      url: mailto:helder.f.oliveira@inesctec.pt
 
 - name: Erica Doutel
   pic: doutel
   position: Post-Doc
   social:
-    - icon: fab fa-twitter
-      url: #
-    - icon: fas fa-link
-      url: #
 
 - name: Marina Castro
   pic: default
   position: Researcher
   social:
-    - icon: fab fa-twitter
-      url: #
-    - icon: fas fa-link
-      url: #
+    - icon: far fa-envelope
+      url: mailto:marina.n.castro@inesctec.pt
+
+- name: Ricardo Araújo
+  pic: araujo
+  position: PhD student
+  social:
+
+- name: Tomás Rodrigues Pinto
+  pic: pinto
+  position: PhD Student
+  social:

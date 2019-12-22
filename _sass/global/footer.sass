@@ -1,67 +1,124 @@
 footer
-  display: grid
-  grid-template-columns: 2fr 1fr 1fr
-  grid-template-rows: auto 5vh
-  grid-template-areas: "fbragging  fbragging flinks" "fbase fbase fbase"
-  grid-gap: 4rem
-  box-sizing: border-box
-  padding-left: 4rem
-  padding-right: 4rem
-  padding-top: 5rem
   background-color: $footer-bg
-  color: $white-color
+  box-sizing: border-box
+  color: $white
+  display: grid
+  grid-column-gap: 0
+  grid-row-gap: 10px
+  grid-template-areas: 'footer-funding' 'footer-links' 'footer-add' 'footer-base'
+  grid-template-columns: 1fr
+  padding: 5vh 5vw
 
-.footer-bragging
-  grid-area: fbragging
-  ul
-    display: flex
-    justify-content: space-between
-    padding: 0
-    padding-top: 2rem
-    position: relative
-  li
-    list-style: none
+.footer-funding
+  grid-area: footer-funding
+
+.footer-title
+  text-align: center
+
+.footer-funder-list
+  list-style: none
+  padding: 0
+  text-align: center
+
+.footer-funder-item
+  padding: 20px 0
+
+.footer-funders-img
+  width: 60%
+
+.footer-add
+  grid-area: footer-add
+
+.footer-add-list
+  padding: 0
+
+.footer-add-item
+  list-style: none
+  margin: 0
+  padding: 0
+  text-align: left
+
+  p
+    margin: 0
 
 .footer-links
-  grid-area: flinks
-  text-align: right
-  text-decoration: none
-  li
-    list-style: none
-    // transition for hover
-    transition: 0.3s ease-in-out
+  grid-area: footer-links
+  line-height: 2rem
+  text-align: center
+
+.footer-links-list
+  list-style: none
+  padding: 0
 
 .footer-base
-  grid-area: fbase
-  display: flex
-  font-size: $small-font
   border-top: 1px solid rgb(130, 130, 130)
-  justify-content: space-between
+  display: flex
+  flex-direction: column
+  font-size: $small-font
+  grid-area: footer-base
+  text-align: center
 
-@media screen and ( min-width : 1024px )
-  // assume touch so dont bother looding these
-  .footer-links:hover > li
-    opacity: 0.5
+.footer-slogan,
+.footer-copyright
+  margin: 0
+  padding: 0
 
-  .footer-links:hover > li:hover
-    opacity: 1
+@media screen and ( min-width: 768px )
 
-@media screen and ( max-width : 600px )
   footer
-    grid-template-columns: 1fr
-    grid-template-rows: auto auto auto
-    grid-template-areas: "flinks" "fbragging" "fbase"
-    grid-gap: 10vh
-    box-sizing: border-box
-    padding-left: 2rem
-    padding-right: 2rem
-    padding-top: 4rem
+    grid-template-areas: 'footer-links footer-funding' 'footer-add footer-funding' 'footer-base footer-base'
+    grid-template-columns: 60% 40%
+    grid-row-gap: 0
+
+  .footer-title
+    text-align: left
+
+  .footer-funder-list
+    column-count: 1
+    text-align: left
+
+  .footer-funder-item
+    padding: 30px 0
+    width: 25vw
+
+  .footer-base
+    flex-direction: row
+    justify-content: space-between
+
   .footer-links
     text-align: left
 
-  .footer-bragging
-    margin: auto
-    ul
-      flex-direction: column
-      li
-        padding: 20px
+@media screen and ( min-width: 1024px )
+
+  footer
+    grid-template-areas: 'footer-links footer-funding' 'footer-add footer-add' 'footer-base footer-base'
+    grid-template-columns: 30% 70%
+
+  .footer-funder-list
+    column-count: 2
+
+  .footer-funder-item
+    width: 15vw
+
+  .footer-funders-img
+    filter: grayscale(1) invert(.5)
+    transition: filter .6s ease
+    width: 100%
+
+    &:hover
+      filter: grayscale(0) invert(0)
+
+
+
+  // broken
+  .footer-links-list
+    transition: .3s ease-in-out
+
+  .footer-links-list:hover > li
+    opacity: .5
+
+  .footer-link:hover
+    opacity: 1
+
+  .footer-add-list li
+    display: inline-flex

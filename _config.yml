@@ -15,7 +15,8 @@ phone: +351 22 508 13 65
 
 # Postal address (add as many lines as necessary)
 postal_add:
-  street: Faculdade de Engenharia da Universidade do Porto
+  street: Faculdade de Engenharia
+  university: Universidade do Porto
   city: Porto
   region:
   country: Portugal
@@ -23,12 +24,15 @@ postal_add:
 
 author:
   name: made slowly
+  slogan: made slowly⚡served fast
   email: arran@madeslowly.co.uk
   twitter: made_slowly
   description: Freelance web developer, based in Oxford, providing an all-in-one solution to getting a website. Your new website will be smarter and faster all whilst looking awesome | Web Design | Digital Branding | Secure Hosting
   url: https://www.madeslowly.co.uk
 
 logo: hs-logo.svg
+
+favicon: favicon.png
 
 google:
   verification: 3-1KPjLLtQeo1sgSENGCLLkElCiVfRZAuc4-MJp9nEA

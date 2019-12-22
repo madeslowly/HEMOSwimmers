@@ -9,12 +9,12 @@
   link:      /#team
   menu:      1
 - name:      Open Position
-  link:      /open-position
+  link:      /open-position/
   menu:      1
 - name:      Contact
-  link:      /contact
+  link:      /contact/
   menu:      1
 # Secondary level menu items
 - name:      Privacy
-  link:      /privacy
+  link:      /privacy/
   menu:      2

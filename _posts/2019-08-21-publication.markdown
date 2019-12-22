@@ -3,13 +3,12 @@ title: Pressure Tap Influence on the Flow of Viscoelastic Fluids in a Microfluid
 subtitle:
 author: Tomás Rodrigues, J. Hermenegildo García-Ortiz, Francisco J. Galindo-Rosales, Laura Campo-Deaño
 layout: default
-modal-id: 4
 feature: true
 date: 2019-08-21
 img: pub4.jpg
 thumbnail: pub4-thumb.jpg
 alt: image-alt
-project-date: Aug 2019
+publication-date: Aug 2019
 category: Book Chapter
 publisher: Springer, Cham
 doi: 10.1007/978-3-030-27701-7_36

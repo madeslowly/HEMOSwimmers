@@ -4,12 +4,11 @@ subtitle:
 author: Marina Castro, Ricardo J. Araújo, Laura Campo-Deaño, Hélder P. Oliveira
 layout: default
 feature: true
-modal-id: 3
 date: 2019-09-22
 img: pub3.jpg
 thumbnail: pub3-thumb.jpg
 alt: image-alt
-project-date: Sept 2019
+publication-date: Sept 2019
 category: Book Chapter
 publisher: Springer, Cham
 doi: 10.1007/978-3-030-31321-0_44

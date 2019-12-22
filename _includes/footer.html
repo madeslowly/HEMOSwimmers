@@ -1,28 +1,48 @@
 <footer>
-  <!-- footer contacts -->
-  <div class="footer-bragging">
-    <ul>
-      {% for item in site.data.funding %}
-        <li>
-          <a href="{{ item.url }}">
-            <img src="{{ site.baseurl }}/assets/img/funding/logos/{{ item.logo }}" width="120px">
-          </a>
-        </li>
-      {% endfor %}
+  <div class="footer-funding">
+    <h2 class="footer-title">Our Funders</h2>
+    <ul class="footer-funder-list">
+    {% for item in site.data.funding %}
+      <li class="footer-funder-item">
+        <a href="{{ item.url }}">
+          <img class="footer-funders-img" src="{{ site.baseurl }}/assets/img/funding/logos/{{ item.logo }}" width="120px">
+        </a>
+      </li>
+    {% endfor %}
     </ul>
   </div>
 
-  <div class="footer-socials"></div>
-
-  <div class="footer-links"
-    <ul>
+<div class="footer-links">
+  <h2 class="footer-title">Site Links</h2>
+    <ul class="footer-links-list">
       {% for item in site.data.menu %}
+      <a class="footer-link" href="{{ site.baseurl }}{{ item.link }}" >
         <li>
-          <a href="{{ item.link }}" >
-            {{ item.name }}
-          </a>
-        </li>
+          {{ item.name }}
+          </li>
+        </a>
       {% endfor %}
+    </ul>
+</div>
+
+  <div class="footer-add">
+    <ul class="footer-add-list">
+      <li class="footer-add-item">
+        <p> {{ site.postal_add.street }}</p>
+        </li><li class="footer-add-item">
+        <p> {{ site.postal_add.university }}</p>
+        </li><li class="footer-add-item">
+        <p> {{ site.postal_add.city }}</p>
+        </li><li class="footer-add-item">
+        <p> {{ site.postal_add.region }}</p>
+        </li><li class="footer-add-item">
+        <p> {{ site.postal_add.country }}</p>
+        </li><li class="footer-add-item">
+        <p> {{ site.postal_add.postcode }}</p>
+        </li><li class="footer-add-item">
+        <p>{{ site.phone }}</p>
+        </li>
+
     </ul>
   </div>
 
@@ -30,10 +50,10 @@
   <div class="footer-base">
     <p class="footer-slogan">
       <a href="{{ site.author.url }}">
-        {{ site.author.name }}
+        {{ site.author.slogan }}
       </a>
     </p>
-    <p class="copyright"> &copy; {{ 'now' | date: "%Y" }} {{ site.owner }}</p>
+    <p class="footer-copyright"> &copy; {{ 'now' | date: "%Y" }} {{ site.title }}</p>
   </div>
 
 </footer>

@@ -6,9 +6,9 @@
   </div>
   <ul class="nav-links">
     {% for item in site.data.menu %} {% if item.menu == 1 %}
-    <a href="{{ site.baseurl}}{{ item.link }}">
+    <a href="{{ site.baseurl }}{{ item.link }}">
       <li>
-      {{ item.name }}
+      {{ item.name | upcase }}
       </li>
     </a>
 
