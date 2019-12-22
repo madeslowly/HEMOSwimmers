@@ -13,7 +13,7 @@ const navSlide = ()=>{
       if ( link.style.animation ) {
         link.style.animation = ``
       } else {
-        link.style.animation = `navLinksFade 0.5s ease-in forwards ${index / 50 + 0.1 }s`
+        link.style.animation = `navLinksFade .4s ease-out forwards ${index * .1 + .1 }s`
       }
     });
     burger.classList.toggle('toggle');
