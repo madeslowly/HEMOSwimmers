@@ -29,23 +29,17 @@ author:
   twitter: made_slowly
   description: Freelance web developer, based in Oxford, providing an all-in-one solution to getting a website. Your new website will be smarter and faster all whilst looking awesome | Web Design | Digital Branding | Secure Hosting
   url: https://www.madeslowly.co.uk
+  thumbnail: author.jpg
 
 logo: hs-logo.svg
 
 favicon: favicon.png
 
-google:
-  verification: 3-1KPjLLtQeo1sgSENGCLLkElCiVfRZAuc4-MJp9nEA
-  analytics: UA-154573664-1
+thumbnail: thumbnail.jpg
 
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-social:
-  - icon: fab fa-twitter
-    url:
-  - icon: fab fa-facebook
-    url:
-  - icon: fab fa-github
-    url:
+google:
+  verification: f8K7Otrkax9sESY5hKxJ6lmlACxPimeM3ax20imsUiI
+  analytics: UA-154869296-1
 
 # Build settings
 

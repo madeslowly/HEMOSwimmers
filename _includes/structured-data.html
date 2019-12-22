@@ -8,12 +8,7 @@
     "@id":"{{ site.url }}{{ site.baseurl }}/#website",
     "url": "{{ site.url }}{{ site.baseurl }}/",
     "sameAs":[
-      "mailto:arran@madeslowly.co.uk",
-      {% assign n = site.social.links | size %}
-      {% for links in site.social.links %}
-      {% assign i = forloop.index %}
-      "{{ links }}"{% if n != i %} , {% endif %}
-      {% endfor %} ],
+      "mailto:{{ site.email }}"],
     "name": "{{ site.title }} | {{ site.subtitle }}",
     "description": "{{ site.description }}",
     "image": "{{ site.url }}{{ site.baseurl }}/assets/img/page-thumbs/{{ site.thumbnail }}",
@@ -23,7 +18,7 @@
       "@context": "http://schema.org",
       "name": "{{ site.author.name }}",
       "description": "{{ site.author.description }}",
-      "image": "{{ site.url }}{{ site.baseurl }}/assets/img/page-thumbs/{{ site.thumbnail }}"} ]
+      "image": "{{ site.url }}{{ site.baseurl }}/assets/img/page-thumbs/{{ site.author.thumbnail }}"} ]
      } , {
     /* WePage */
     /* var */
@@ -56,9 +51,4 @@
     "postalCode": "{{ site.postal_add.postcode }}" },
   "telephone": "{{ site.phone }}",
   "sameAs": [
-    "mailto:{{ site.author.email }}",
-    {% assign n = site.social.links | size %}
-    {% for links in site.social.links %}
-    {% assign i = forloop.index %}
-    "{{ links }}"{% if n != i %} , {% endif %}
-    {% endfor %} ] } </script>
+    "mailto:{{ site.email }}"] } </script>
