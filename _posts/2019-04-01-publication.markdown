@@ -2,7 +2,7 @@
 title: On the hemodynamics around 2D microbot prototypes
 subtitle:
 author: Pinto, T. R., Galindo-Rosales, F.J. and  Campo-Deaño, L
-layout: default
+layout: publications
 feature: false
 date: 2019-04-01
 img: pub2.jpg

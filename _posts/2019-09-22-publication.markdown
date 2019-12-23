@@ -2,7 +2,7 @@
 title: Towards Automatic and Robust Particle Tracking in Microrheology Studies
 subtitle:
 author: Marina Castro, Ricardo J. Araújo, Laura Campo-Deaño, Hélder P. Oliveira
-layout: default
+layout: publications
 feature: true
 date: 2019-09-22
 img: pub3.jpg

@@ -50,9 +50,9 @@ exclude:
   - Screenshot.png
 
 markdown:          kramdown
-paginate:          6
+paginate:          12
 paginate_path:     "/publications/page-:num/"
-permalink: /publications/:title/
+# permalink: /publications/:title/
 plugins:
   - jekyll-feed
   - jekyll-paginate

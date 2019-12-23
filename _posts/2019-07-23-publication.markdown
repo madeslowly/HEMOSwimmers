@@ -2,7 +2,7 @@
 title: Particle Tracking in Microscopy Sequences for Microrheology Studies
 subtitle:
 author: Marina Castro
-layout: default
+layout: publications
 feature: false
 date: 2019-07-23
 img: pub1.jpg

@@ -2,7 +2,7 @@
 title: Towards an optimal pressure tap design for fluid-flow characterisation at microscales
 subtitle:
 author: Pinto, T. R., Galindo-Rosales, F.J. and  Campo-Deaño, L
-layout: default
+layout: publications
 feature: true
 date: 2019-04-02
 img: pub2.jpg

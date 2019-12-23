@@ -2,7 +2,7 @@
 title: Towards automatic and robust particle tracking in microrheology studies
 subtitle:
 author: Castro, M., Araujo, R., Campo-Deaño, L. and Oliveira, H.
-layout: default
+layout: publications
 feature: false
 date: 2019-07-01
 img: pub2.jpg
