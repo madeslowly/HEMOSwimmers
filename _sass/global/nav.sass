@@ -25,16 +25,13 @@ nav
   list-style: none
   text-decoration: none
 
-  a
-    // we need a better way of spacing out the links
-    margin-left: 10px
-    // transition for when we hover over a link and fade out the others
-    transition: .2s ease-in-out
-
   li
+    margin-left: 10px
+    transition: .3s ease-in-out
+
+  a
     border-radius: 5px
     padding: 1rem
-    transition: .3s ease-in-out
 
 .nav-brand
   width: 100px
@@ -55,10 +52,8 @@ nav
 
     a
       &:hover
+        background-color: $vivid-red
         opacity: 1
-
-        li
-          background-color: $vivid-red
 
 @media screen and ( max-width: 1024px )
   nav
@@ -92,17 +87,16 @@ nav
     z-index: -1
 
     li
-      //border-bottom: 1px solid $soft-white
-      border-radius: 0
-      margin-bottom: 3vh
+      margin: 0 auto
+      padding: 4vh 0
       opacity: 0
-      padding-bottom: 1vh
-      text-align: center
-      vertical-align: top
 
     a
-      margin: 0
-      padding: 0
+      border-radius: 0
+      margin: 0 auto
+      //opacity: 0
+      text-align: center
+      vertical-align: top
 
   .nav-active
     // we toggle this class in mobile-nav-slider.js on burger click

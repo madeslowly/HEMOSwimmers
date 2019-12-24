@@ -6,11 +6,11 @@
   </div>
   <ul class="nav-links">
     {% for item in site.data.menu %} {% if item.menu == 1 %}
-    <a href="{{ site.baseurl }}{{ item.link }}">
-      <li>
+    <li>
+      <a href="{{ site.baseurl }}{{ item.link }}">
       {{ item.name | upcase }}
-      </li>
-    </a>
+      </a>
+    </li>
 
     {% endif %} {% endfor %}
   </ul>
